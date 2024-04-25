@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+ 
+
+.iconcards{
+  background-color:#F0EBE3 ;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.iconcards:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+</style>
+
+
+<main>
+  <section style="background-color: #153448;display: flex; justify-content: flex-end;">
+
+    <div class="container-fluid" style="background-color: #153448;">
+      <div style="display: flex; align-items: center;" >
+        <span class="text-light ml-5">Welcome to Insurance Company Name, your trusted partner for all your insurance needs. Whether you're looking to protect your home, car, health, or business, we've got you covered. With our range of customizable insurance plans and dedicated customer service, you can have peace of mind knowing that you're in good hands.
+
+          <p>Ready to get started? Contact us today to speak with one of our friendly insurance agents and discover how we can help protect what matters most to you. You can reach us by phone, email, or visit our office during business hours. We look forward to serving you!</p>
+          <button class="btn text-light " style="background-color: #DC6B19; ">Check Prices</button>
+        </span>
+        <img src="{% static 'images/insurance2.png' %}" style="width: 600px; height: 600px;" class="img-fluid mt-5 mr-5" alt="">
+      </div>
+
+  
+      
+     
+  
+    </div>
+  </section>
+<section  style="background-color: #F0EBE3;">
+  <div class="container  mb-4 p-2" style="text-align: center;background-color: #F0EBE3;">
+    <h3 ></h3>
+    <br>
+    <div class="row " id="card-container-1" style="background-color: #F0EBE3;;">
+        <div class="col-md-3 mb-4">
+            <div class="card iconcards" style="border: none;">
+                <div class="card-body section-with-shadow ">
+                  <a href="" class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-heart-pulse"  style="color:#DC6B19;font-size: 5rem;"></i>
+                    <p ><b>Life Insurance</b></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card iconcards" style="border: none;">
+                <div class="card-body section-with-shadow">
+                  <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-car-side" style="color: #DC6B19;font-size: 5rem;"></i>
+                    <p ><b>Car Insurance</b></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card iconcards" style="border: none;">
+                <div class="card-body section-with-shadow ">
+                  <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-motorcycle" style="color: #DC6B19;font-size: 5rem;"></i>
+                    <p ><b>Bike Insurance</b></p></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="card iconcards" style="border: none;">
+                <div class="card-body section-with-shadow">
+                     <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-plane" style="color: #DC6B19;font-size: 5rem;"></i>
+                    <p ><b>Travel Insurance</b></p></a>
+                </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 mb-4">
+              <div class="card iconcards" style="border: none;">
+                  <div class="card-body section-with-shadow">
+                       <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-people-roof" style="color: #DC6B19;font-size: 5rem;"></i>
+                      <p ><b>Family Insurance</b></p></a>
+                  </div>
+                  </div>
+              </div>
+
+              <div class="col-md-3 mb-4">
+                <div class="card iconcards" style="border: none;">
+                    <div class="card-body section-with-shadow">
+                         <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-umbrella" style="color: #DC6B19;font-size: 5rem;"></i>
+                        <p ><b>Term Insurance</b></p></a>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 mb-4">
+                  <div class="card iconcards" style="border: none;">
+                      <div class="card-body section-with-shadow">
+                           <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-paw" style="color: #DC6B19;font-size: 5rem;"></i>
+                          <p ><b>Pet Insurance</b></p></a>
+                      </div>
+                      </div>
+                  </div>
+
+                  
+                <div class="col-md-3 mb-4">
+                  <div class="card iconcards" style="border: none;">
+                      <div class="card-body section-with-shadow">
+                           <a href=""  class="text-dark" style="text-decoration: none;"><i class="fa-solid fa-building" style="color: #DC6B19;font-size: 5rem;"></i>
+                          <p ><b>Business Insurance</b></p></a>
+                      </div>
+                      </div>
+                  </div>
+        </div>
+        
+    </div>
+
+  </section>
+</main>
+
+{% endblock %}
