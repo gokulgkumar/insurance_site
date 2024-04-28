@@ -2,6 +2,10 @@
 {% block content %}
 {% load static %}
 
+<head>  
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
 <style>
  
 
@@ -12,6 +16,19 @@
 .iconcards:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+@keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    
+    #rotating-image {
+      animation: fade-in 2s ease-in-out;
+    }
 
 </style>
 
@@ -26,7 +43,7 @@
           <p>Ready to get started? Contact us today to speak with one of our friendly insurance agents and discover how we can help protect what matters most to you. You can reach us by phone, email, or visit our office during business hours. We look forward to serving you!</p>
           <button class="btn text-light " style="background-color: #DC6B19; ">Check Prices</button>
         </span>
-        <img src="{% static 'images/insurance2.png' %}" style="width: 600px; height: 600px;" class="img-fluid mt-5 mr-5" alt="">
+        <img id="rotating-image" src="{% static 'images/insurance2.png' %}" style="width: 600px; height: 600px;" class="img-fluid mt-5 mr-5" alt="">
       </div>
 
   
@@ -36,7 +53,7 @@
     </div>
   </section>
 <section  style="background-color: #F0EBE3;">
-  <div class="container  mb-4 p-2" style="text-align: center;background-color: #F0EBE3;">
+  <div class="container  mb-4 p-2" style="text-align: center;background-color: #F0EBE3;"  data-aos="fade-up" data-aos-delay="300">
     <h3 ></h3>
     <br>
     <div class="row " id="card-container-1" style="background-color: #F0EBE3;;">
@@ -113,7 +130,41 @@
         
     </div>
 
+
+
   </section>
+
+
+  <section style="background-color: #F0EBE3;">
+    <div class="container mb-4 " style="text-align: center;background-color: #F0EBE3;" data-aos="fade-up" data-aos-delay="200">
+      <h3></h3>
+      <br>
+      <h3 class="text-center mb-3">Our Benefits</h3>
+      <div class="container d-flex justify-content-start mt-3" style="background-color: #F0EBE3;">
+        <img src="{% static 'images/service1.png' %}" style="width: 300px; height: 300px; border-radius: 5px;" class="img-fluid card me-3" alt="">
+        <p class="text-right">hekklodf</p>
+      </div>
+     
+    </div>
+  </section>
+  
+
+
+<br>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+   
 </main>
+
+
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 {% endblock %}
